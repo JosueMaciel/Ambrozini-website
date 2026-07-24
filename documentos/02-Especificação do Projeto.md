@@ -5,22 +5,21 @@
 <table>
 <tbody>
 <tr>
-<th colspan="2">Perfil 1: Aluno </th>
+<th colspan="2">João Martins - 34 anos - Analista Financeiro </th>
 </tr>
 <tr>
 <td width="150px"><b>Descrição</b></td>
 <td width="600px">
-Aluno do ensino superior, seja educação pública ou privada. 
+Objetivo: Encontrar rapidamente informações sobre os restaurantes Ambrozini, como localização, horário de funcionamento e acessar o delivery pelo iFood. 
 </td>
 </tr>
 <tr>
 <td><b>Necessidades</b></td>
 <td>
-1. Acesso fácil e rápido a conteúdos didáticos de qualidade, sem custo adicional à sua vida acadêmica; 
-2. Utilizar ambientes digitais em que esteja familiarizado; 
-3. Conteúdos apresentados em mídias diversificadas;
-4. Possibilidade de apoio de um monitor/tutor;
-5. Exercícios de fixação com resolução. 
+1. Navegação rápida;
+2. Informações objetivas;
+3. Acesso ao cardápio e delivery;
+4. Localização das unidades. 
 </td>
 </tr>
 </tbody>
@@ -29,19 +28,44 @@ Aluno do ensino superior, seja educação pública ou privada.
 <table>
 <tbody>
 <tr>
-<th colspan="2">Perfil 2: Ex-aluno </th>
+<th colspan="2">Mariana Souza - 39 anos - Coordenadora de Eventos Corporativos </th>
 </tr>
 <tr>
 <td width="150px"><b>Descrição</b></td>
 <td width="600px">
-Ex-aluno do ensino superior. 
+Objetivo: Encontrar uma empresa confiável para organizar o coffee break e buffet de um evento empresarial. 
 </td>
 </tr>
 <tr>
 <td><b>Necessidades</b></td>
 <td>
-1. Entender as demandas dos alunos; 
-2. Ambiente educacional para orientar e entrar em contato com os alunos.
+1. Conhecer os tipos de eventos atendidos;
+2. Ver fotos e vídeos;
+3. Ler depoimentos de clientes;
+4. Solicitar orçamento rapidamente..
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<tbody>
+<tr>
+<th colspan="2">Ricardo Oliveira - 45 anos - Empresário </th>
+</tr>
+<tr>
+<td width="150px"><b>Descrição</b></td>
+<td width="600px">
+Objetivo: Conhecer melhor a Ambrozini, sua história e a trajetória do CEO antes de iniciar uma parceria comercial. 
+</td>
+</tr>
+<tr>
+<td><b>Necessidades</b></td>
+<td>
+1. EConhecer a empresa;
+2. Entender sua credibilidade;
+3. Visualizar sua atuação no mercado;
+4. Acessar as redes sociais do CEO.
 </td>
 </tr>
 </tbody>
@@ -54,16 +78,10 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE`                                             |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|--------------------------------------------------------------------------------|----------------------------------------|
-|Ex-aluno | ajudar estudantes de áreas diversas que estão com dificuldades nos estudos  | orientar e melhorar o desempenho acadêmico dos alunos. |
-|Aluno | participar de uma atividade extra que emita certificados  | cumprir os créditos necessários para concluir a graduação.  |
-|Aluno|acessar os materiais complementares do curso de uma maneira mais fácil  | otimizar o tempo de estudo e entender melhor o conteúdo.  |
-|Aluno | sanar dúvidas que tenho sobre as matérias do curso com outros alunos ou ex-alunos   | entender melhor as matérias e criar uma rede de contatos. |
-|Ex-aluno | auxiliar estudantes que estejam iniciando na área  | ajudar alunos que apresentem dificuldades semelhantes às que já tive. |
-|Aluno |sanar todas as dúvidas de exercícios desde o início do curso | estar apto para as avaliações do primeiro semestre e assim não enfrentar maiores dificuldades ao longo do curso. |
-|Aluno |procurar livros que me ajudem a ter melhor compreensão da matéria  | encontrar livros sobre determinadas matérias que tenham uma boa didática para iniciantes.|
-|Aluno | consultar livros bem indicados por outros alunos   | ampliar meu conhecimento e conhecer pessoas com a mesma dificuldade. |
-|Ex-aluno | compartilhar com os outros estudantes conhecimentos, e assim poder ajudar uns aos outros  | conectar com alunos e até poder formar amizades e grupos de estudos. |
-|Aluno | aprender sobre conteúdos específicos da área com exemplos práticos e em mídias diferentes  | aplicar o conhecimento na prática.  |
+|João Martins | quero localizar rapidamente a unidade Ambrozini mais próxima e acessar o iFood  | para pedir uma refeição ou planejar minha visita com facilidade. |
+|Mariana Souza | quero visualizar os serviços oferecidos, conhecer eventos já realizados e solicitar um orçamento online  | para contratar uma empresa confiável com rapidez e segurança.  |
+|Ricardo Oliveira | quero conhecer a trajetória da Ambrozini e de seu CEO  | para compreender a credibilidade da empresa antes de iniciar uma parceria ou contratação.  |
+
 
 ## Requisitos
 
