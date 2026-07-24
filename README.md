@@ -1,23 +1,14 @@
-# Vida de Estudante
-
-`Análise e Desenvolvimento de Sistemas - PUC Minas`
+# Projeto web site Ambrozini
 
 `Desenvolvimento de aplicação web front-end`
 
-`1º semestre/2022`
+`2º semestre/2026`
 
-O objetivo geral deste projeto é a criação de uma aplicação web de fácil acesso e uso que permita aos universitários a busca e troca de fontes de informações e conhecimentos entre seus colegas discentes.
+O Ambrozini Website é o novo site institucional da Ambrozini, desenvolvido para fortalecer a presença digital da marca e apresentar de forma clara seus três principais segmentos de atuação: Restaurantes, Delivery e Eventos. Além de servir como canal de relacionamento com clientes, o projeto busca posicionar a Ambrozini como referência em gastronomia e operações para eventos, oferecendo uma experiência moderna, intuitiva e focada em conversão.
 
-## Integrantes
+## Responsável
 
-* Anna Luiza de Angelis Souza Freitas
-* Daiane Campos Procópio
-* Fernanda Augusta de Barcelos Coura
-* Rúbia Karina Prado Costa
-
-## Orientadora
-
-* Joyce Christina de Paiva Carvalho
+* Josué Maciel
 
 # Documentação
 
