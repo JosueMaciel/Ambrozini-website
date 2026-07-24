@@ -1,42 +1,45 @@
 # Introdução
 
-A transição do ambiente escolar para a vida acadêmica traz mudanças impactantes na vida dos jovens. Segundo Oliveira e Dias (2014, p. 187), “essas mudanças podem constituir  dificuldades para os alunos, que, frequentemente, buscam auxílio na sua rede de apoio para lidar com as mesmas.”
-
-Dentre as dificuldades enfrentadas, observa-se a falta de recursos financeiros para à aquisição de fontes de informações e o acompanhamento dos conhecimentos necessários para o desenvolvimento acadêmico dos discentes, visto que durante a graduação os estudos são realizados de maneira mais autônoma pelos estudantes.
-
-Dessa forma, torna-se necessário cobrir essa lacuna enfrentada pelos estudantes de graduação, para que o seu aproveitamento acadêmico não seja afetado pelas adversidades citadas.
+O Ambrozini Website é o novo site institucional da Ambrozini, desenvolvido para fortalecer a presença digital da marca e apresentar de forma clara seus três principais segmentos de atuação: Restaurantes, Delivery e Eventos. Além de servir como canal de relacionamento com clientes, o projeto busca posicionar a Ambrozini como referência em gastronomia e operações para eventos, oferecendo uma experiência moderna, intuitiva e focada em conversão..
 
 
 ## Problema
 
-Diante do exposto, o desafio que se busca superar com este projeto é a falta de suporte enfrentada por alunos do ensino superior no que se refere às fontes de informações e conhecimentos necessários para um bom aproveitamento acadêmico.
+O site atual não representa o posicionamento estratégico da Ambrozini nem comunica de forma eficiente seus serviços, estrutura e diferenciais. A navegação limitada, a falta de uma experiência voltada para conversão e a ausência de conteúdos específicos para cada área dificultam a geração de novos negócios, principalmente no segmento de eventos.
 
 
 ## Objetivos
 
-O objetivo geral deste projeto é a criação de uma aplicação web de fácil acesso e uso que permita aos universitários a busca e troca de fontes de informações e conhecimentos entre seus colegas discentes.
-
-Como objetivos específicos, podemos destacar:
-
-* Oferecer uma plataforma de uso gratuito para apoiar alunos de graduação em seu desenvolvimento acadêmico;
-* Auxiliar estes alunos na troca de livros didáticos, de referência e literatura;
-* Conectar os alunos que buscam tutoria para potencializar sua aprendizagem.
-
+Desenvolver um website moderno, responsivo e otimizado, capaz de fortalecer a imagem da Ambrozini, facilitar o acesso às informações sobre restaurantes e delivery, além de aumentar a geração de oportunidades comerciais para o setor de eventos através de formulários integrados ao CRM, conteúdo estratégico e uma navegação intuitiva.
 
 
 ## Justificativa
 
-De acordo com Oliveira e Santos (2012) citado por Fialho e Sousa (2019, p. 211):
-
-"A internet, prioritariamente as redes sociais, consiste em um campo que possibilita atuações diferenciadas por seus usuários. Para o público juvenil, por exemplo, as redes são mais do que um ambiente utilizado para se relacionar, pois também é espaço de aprendizado, de expressão e de troca de experiências."
-
-Portanto, a criação de uma aplicação web para a resolução deste problema foi motivada pela presença da internet na vida dos jovens, e os fins diversos aos quais estes a utilizam.
+A presença digital tornou-se um dos principais pontos de contato entre empresas e clientes. Para a Ambrozini, o website representa mais do que uma vitrine institucional: é uma ferramenta estratégica para fortalecer a marca, transmitir credibilidade e gerar novas oportunidades de negócio. O desenvolvimento de um novo site justifica-se pela necessidade de modernizar a comunicação, melhorar a experiência do usuário, destacar os diferentes segmentos de atuação da empresa e aumentar a conversão de clientes, especialmente no setor de eventos. Além disso, o projeto busca oferecer uma plataforma de fácil manutenção, otimizada para dispositivos móveis, preparada para mecanismos de busca (SEO) e integrada aos processos comerciais da empresa.
 
 
 ## Público-Alvo
 
-Embora os desafios citados possam ocorrer desde o início da vida escolar dos estudantes, o foco deste trabalho está no público de graduação.
+O projeto atende diferentes perfis de usuários:
 
-Assim, estabeleceu-se como público-alvo desta solução homens e mulheres entre 18 e 24 anos, pois além de terem maior autonomia em seus estudos, eles também enfrentam os obstáculos da transição para a vida universitária, como a necessidade de rápida adaptação, e tais mudanças podem afetar o seu desempenho acadêmico.
+Clientes que buscam informações sobre os restaurantes Ambrozini;
+Consumidores que desejam acessar rapidamente o Delivery pelo iFood;
+Empresas, organizadores e pessoas físicas interessadas na contratação de serviços de buffet e eventos;
+Parceiros comerciais;
+Profissionais interessados em conhecer a trajetória do CEO Pedro Ambrozini e a história da marca.
 
-Além dos alunos de graduação com o perfil citado acima, o projeto também é voltado para ex-alunos que pretendem atuar como tutores e contribuir com o aprendizado dos alunos de graduação.
+
+## Funcionalidades previstas
+
+Página inicial institucional;
+Apresentação dos restaurantes;
+Redirecionamento para o iFood;
+Página exclusiva para Eventos;
+Modal com tipos de eventos;
+Galeria de fotos e vídeos;
+Formulário integrado ao CRM;
+FAQ;
+Página institucional do CEO Pedro Ambrozini;
+Design responsivo para desktop e dispositivos móveis;
+Otimização para SEO;
+Versionamento utilizando Git e GitHub.
