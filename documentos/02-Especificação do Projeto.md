@@ -87,41 +87,42 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-01| O sistema deve permitir a navegação entre todas as páginas do menu.   | ALTA | 
-|RF-02| O sistema deve permitir e redirecionar para o ifood.   | ALTA | 
-|RF-03| O sistema deve permitir e redirecionar para as redes sociais.    | ALTA |
-|RF-04| O sistema deve usa api da google para mostra no mapa ao clique a localização dos self-services.    | ALTA |
-|RF-05| O sistema deve permitir e redirecionar ao clique para avaliação google dos serviços.  | MÉDIA |
-|RF-06| o sistema deve permitir navegação pelas imagens da galeria.    | MÉDIA |
-|RF-07| O sistema deve permitir e redirecionar para a página de eventos e Pedro Ambrozni.    | ALTA |
-|RF-08| O sistema deve permitir o preenchimento e envio de formulário de contato   | MÉDIA |
-|RF-09| O sistema permitir e redirecionar ao whatsapp  | ALTA |
-|RF-10| O sistema deve exibir informações detalhadas dos tipos de evento em janelas modais.  | ALTA |
-|RF-11| O sistema deve exibir formulário CRM de capitação de leads.  | ALTA |
+| ID | Descrição do Requisito | Prioridade |
+|------|-----------------------------------------|------------|
+| RF-01 | O sistema deve permitir a navegação entre todas as páginas por meio do menu principal. | ALTA |
+| RF-02 | O sistema deve permitir o redirecionamento do usuário para o iFood. | ALTA |
+| RF-03 | O sistema deve permitir o redirecionamento para as redes sociais da Ambrozini e do CEO Pedro Ambrozini. | ALTA |
+| RF-04 | O sistema deve utilizar a API do Google Maps para exibir a localização das unidades da Ambrozini. | ALTA |
+| RF-05 | O sistema deve permitir o redirecionamento para a página de avaliações do Google. | MÉDIA |
+| RF-06 | O sistema deve permitir a navegação pelas imagens da galeria de eventos. | MÉDIA |
+| RF-07 | O sistema deve permitir a navegação para as páginas de Eventos e Pedro Ambrozini. | ALTA |
+| RF-08 | O sistema deve permitir o preenchimento e o envio do formulário de contato. | MÉDIA |
+| RF-09 | O sistema deve permitir o redirecionamento para o WhatsApp da empresa. | ALTA |
+| RF-10 | O sistema deve exibir informações detalhadas sobre os tipos de eventos em janelas modais. | ALTA |
+| RF-11 | O sistema deve disponibilizar um formulário de captação de leads integrado ao CRM da empresa. | ALTA |
 
-**Prioridade: Alta / Média / Baixa.  
+**Prioridade:** Alta / Média / Baixa.
 
 ### Requisitos Não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-01| O website deverá ser responsivo, adaptando-se a computadores, tablets e smartphones.  | ALTA | 
-|RNF-02| O tempo de carregamento das páginas deverá ser reduzido, proporcionando uma navegação rápidaa.  | MÉDIA | 
-|RNF-03| O sistema deverá ser compatível com os principais navegadores modernos (Google Chrome, Microsoft Edge, Mozilla Firefox e Safari.  | ALTA | 
-|RNF-04| A interface deverá possuir navegação intuitiva e de fácil utilização.  | BAIXA |
-|RNF-05| O website deverá utilizar HTML5, CSS3 e JavaScript.  | ALTA |
-|RNF-06| O código-fonte deverá ser versionado utilizando Git e GitHub.  | ALTA |
-|RNF-07| O website deverá possuir organização modular do código para facilitar futuras manutenções.  | ALTA |
-|RNF-08| As páginas deverão seguir a identidade visual institucional da Ambrozini.  | ALTA |
-|RNF-09| O website deverá ser otimizado para mecanismos de busca (SEO).  | ALTA |
-|RNF-10| O sistema deverá possuir estrutura preparada para futuras expansões e inclusão de novas funcionalidades.  | ALTA |
-|RNF-11| As imagens e vídeos deverão ser otimizados para reduzir o consumo de dados e melhorar o desempenho.  | MÉDIA |
-|RNF-12| O website deverá seguir princípios básicos de acessibilidade, como contraste adequado, textos alternativos para imagens e navegação por teclado quando aplicável.  | MÉDIA |
-|RNF-13| O layout deverá manter consistência visual em todas as páginas do sistema.  | MÉDIA |
+| ID | Descrição do Requisito | Prioridade |
+|------|-----------------------------------------|------------|
+| RNF-01 | O website deverá ser responsivo, adaptando-se a computadores, tablets e smartphones. | ALTA |
+| RNF-02 | O tempo de carregamento das páginas deverá ser reduzido, proporcionando uma navegação rápida. | MÉDIA |
+| RNF-03 | O sistema deverá ser compatível com os principais navegadores modernos (Google Chrome, Microsoft Edge, Mozilla Firefox e Safari). | ALTA |
+| RNF-04 | A interface deverá possuir navegação intuitiva e de fácil utilização. | ALTA |
+| RNF-05 | O website deverá ser desenvolvido utilizando HTML5, CSS3 e JavaScript. | ALTA |
+| RNF-06 | O código-fonte deverá ser versionado utilizando Git e GitHub. | ALTA |
+| RNF-07 | O código deverá ser organizado de forma modular, facilitando futuras manutenções. | ALTA |
+| RNF-08 | As páginas deverão seguir a identidade visual institucional da Ambrozini. | ALTA |
+| RNF-09 | O website deverá ser otimizado para mecanismos de busca (SEO). | ALTA |
+| RNF-10 | O sistema deverá possuir estrutura preparada para futuras expansões e inclusão de novas funcionalidades. | ALTA |
+| RNF-11 | As imagens e os vídeos deverão ser otimizados para reduzir o tempo de carregamento das páginas. | MÉDIA |
+| RNF-12 | O website deverá seguir princípios básicos de acessibilidade, incluindo contraste adequado, textos alternativos para imagens e navegação por teclado quando aplicável. | MÉDIA |
+| RNF-13 | O layout deverá manter consistência visual em todas as páginas do sistema. | MÉDIA |
+| RNF-14 | O website deverá utilizar conexão segura por meio do protocolo HTTPS. | ALTA |
+| RNF-15 | O sistema deverá apresentar funcionamento adequado em diferentes resoluções de tela. | ALTA |
+| RNF-16 | O website deverá utilizar marcação HTML5 semântica para favorecer a acessibilidade e a otimização para mecanismos de busca. | MÉDIA |
 
-
-
-**Prioridade: Alta / Média / Baixa.
+**Prioridade:** Alta / Média / Baixa.
 
