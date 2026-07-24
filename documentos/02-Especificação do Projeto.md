@@ -89,18 +89,17 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-01| A aplicação deve permitir ao usuário cadastrar uma conta.   | ALTA | 
-|RF-02| A aplicação deve permitir ao usuário fazer o login da sua conta.   | ALTA | 
-|RF-03| A aplicação deve oferecer uma funcionalidade de filtro/pesquisa para permitir ao usuário localizar livros.    | ALTA |
-|RF-04| A aplicação deve permitir ao usuário fazer o cadastro de livros.    | ALTA |
-|RF-05| A aplicação deve permitir ao usuário disponibilizar informações das disciplinas de tutoria.  | ALTA |
-|RF-06| A aplicação deve apresentar, para cada livro, uma imagem correspondente à capa.    | BAIXA |
-|RF-07| A aplicação deve permitir ao usuário visualizar as informações sobre  o livro.    | MÉDIA |
-|RF-08| A aplicação deve permitir ao usuário visualizar os detalhes dos tutores   | MÉDIA |
-|RF-09| A aplicação deve permitir ao usuário verificar as informações registradas no cadastro na página Perfil, após fazer seu login.  | MÉDIA |
-|RF-10| A aplicação deve oferecer uma funcionalidade de filtro/pesquisa para permitir ao usuário localizar disciplinas das tutorias disponíveis.  | ALTA |
-|RF-11| A aplicação deve permitir ao usuário disponibilizar informações sobre a tutoria e seu contato.  | MÉDIA |
-|RF-12| A aplicação deve apresentar o tipo de mídia do material disponível.   | BAIXA |
+|RF-01| O sistema deve permitir a navegação entre todas as páginas do menu.   | ALTA | 
+|RF-02| O sistema deve permitir e redirecionar para o ifood.   | ALTA | 
+|RF-03| O sistema deve permitir e redirecionar para as redes sociais.    | ALTA |
+|RF-04| O sistema deve usa api da google para mostra no mapa ao clique a localização dos self-services.    | ALTA |
+|RF-05| O sistema deve permitir e redirecionar ao clique para avaliação google dos serviços.  | MÉDIA |
+|RF-06| o sistema deve permitir navegação pelas imagens da galeria.    | MÉDIA |
+|RF-07| O sistema deve permitir e redirecionar para a página de eventos e Pedro Ambrozni.    | ALTA |
+|RF-08| O sistema deve permitir o preenchimento e envio de formulário de contato   | MÉDIA |
+|RF-09| O sistema permitir e redirecionar ao whatsapp  | ALTA |
+|RF-10| O sistema deve exibir informações detalhadas dos tipos de evento em janelas modais.  | ALTA |
+|RF-11| O sistema deve exibir formulário CRM de capitação de leads.  | ALTA |
 
 **Prioridade: Alta / Média / Baixa.  
 
@@ -108,10 +107,20 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-01| A aplicação deve ser publicada em um ambiente acessível público na Internet.  | ALTA | 
-|RNF-02| A aplicação deverá ser responsiva permitindo a visualização em dispositivos diversos de forma adequada.  | ALTA | 
-|RNF-03| A aplicação deve ter bom nível de contraste entre os elementos da tela.  | MÉDIA | 
-|RNF-04| A aplicação deve ser compatível com os navegadores O site deve ser compatível com os principais navegadores do mercado: Google Chrome, Firefox e Microsoft Edge.  | ALTA | 
+|RNF-01| O website deverá ser responsivo, adaptando-se a computadores, tablets e smartphones.  | ALTA | 
+|RNF-02| O tempo de carregamento das páginas deverá ser reduzido, proporcionando uma navegação rápidaa.  | MÉDIA | 
+|RNF-03| O sistema deverá ser compatível com os principais navegadores modernos (Google Chrome, Microsoft Edge, Mozilla Firefox e Safari.  | ALTA | 
+|RNF-04| A interface deverá possuir navegação intuitiva e de fácil utilização.  | BAIXA |
+|RNF-05| O website deverá utilizar HTML5, CSS3 e JavaScript.  | ALTA |
+|RNF-06| O código-fonte deverá ser versionado utilizando Git e GitHub.  | ALTA |
+|RNF-07| O website deverá possuir organização modular do código para facilitar futuras manutenções.  | ALTA |
+|RNF-08| As páginas deverão seguir a identidade visual institucional da Ambrozini.  | ALTA |
+|RNF-09| O website deverá ser otimizado para mecanismos de busca (SEO).  | ALTA |
+|RNF-10| O sistema deverá possuir estrutura preparada para futuras expansões e inclusão de novas funcionalidades.  | ALTA |
+|RNF-11| As imagens e vídeos deverão ser otimizados para reduzir o consumo de dados e melhorar o desempenho.  | MÉDIA |
+|RNF-12| O website deverá seguir princípios básicos de acessibilidade, como contraste adequado, textos alternativos para imagens e navegação por teclado quando aplicável.  | MÉDIA |
+|RNF-13| O layout deverá manter consistência visual em todas as páginas do sistema.  | MÉDIA |
+
 
 
 **Prioridade: Alta / Média / Baixa.
