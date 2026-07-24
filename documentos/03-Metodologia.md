@@ -58,6 +58,7 @@ O repositório também possibilita o gerenciamento do histórico de desenvolvime
 
 As principais ferramentas utilizadas durante o desenvolvimento são:
 
+|------|-----------------------------------------|
 | Ferramenta |	Finalidade |
 | Visual Studio Code	| Desenvolvimento do código-fonte |
 | Git	| Controle de versão |
