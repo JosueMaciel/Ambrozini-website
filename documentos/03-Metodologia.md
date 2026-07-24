@@ -69,3 +69,48 @@ As principais ferramentas utilizadas durante o desenvolvimento são:
 
 
 <p>Os artefatos do projeto são desenvolvidos a partir das plataformas GitHub e Figma.<p/>
+
+##Tecnologias Utilizadas
+
+O desenvolvimento da aplicação utiliza as seguintes tecnologias:
+
+HTML5
+CSS3
+JavaScript (ES6+)
+Google Maps API
+Git
+GitHub
+
+##Estratégia de Organização do Código
+
+O projeto foi estruturado de forma modular, buscando facilitar a manutenção e futuras expansões.
+
+A organização segue a seguinte estrutura:
+
+ambrozini-website/
+
+assets/
+│
+├── css/
+│   ├── home.css
+│   ├── eventos.css
+│   ├── pedro.css
+│   ├── menu.css
+│   └── footer.css
+│
+├── js/
+│   ├── home.js
+│   ├── eventos.js
+│   ├── pedro.js
+│   └── menu.js
+│
+├── img/
+├── videos/
+└── icons/
+
+index.html
+eventos.html
+pedro.html
+README.md
+
+A organização modular permite que cada página possua seus próprios arquivos de estilização e scripts, enquanto componentes compartilhados, como menu e rodapé, permanecem separados para facilitar a reutilização do código e reduzir a duplicidade de implementação.
