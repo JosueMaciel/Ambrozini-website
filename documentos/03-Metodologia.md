@@ -3,41 +3,40 @@
 
 ## Gerenciamento de Projeto
 
-A metodologia ágil escolhida para o desenvolvimento deste projeto foi o SCRUM, pois como citam Amaral, Fleury e Isoni (2019, p. 68), seus benefícios são a
+Para o desenvolvimento do website da Ambrozini foi adotada uma abordagem baseada na metodologia ágil Scrum, adaptada para um projeto individual. A escolha dessa metodologia justifica-se pela organização das atividades em etapas, acompanhamento contínuo da evolução do projeto e facilidade para realizar ajustes durante o desenvolvimento.
 
-“visão clara dos resultados a entregar; ritmo e disciplina necessários à execução; definição de papéis e responsabilidades dos integrantes do projeto (Scrum Owner, Scrum Master e Team); empoderamento dos membros da equipe de projetos para atingir o desafio; conhecimento distribuído e compartilhado de forma colaborativa; ambiência favorável para crítica às ideias e não às pessoas.” 
+As funcionalidades foram planejadas e desenvolvidas de forma incremental, permitindo a implementação, testes e validação de cada etapa antes do início da próxima. 
 
 ### Divisão de Papéis
 
-Desta forma, a equipe está organizada da seguinte maneira:
+Como o projeto é desenvolvido por um único integrante, todas as responsabilidades são desempenhadas pelo próprio desenvolvedor.:
 <ul>
-  <li>Scrum Master: Daiane Procópio</li>
-  <li>Product Owner: Fernanda Coura </li>
-  <li>Equipe de Desenvolvimento: Anna Freitas, Daiane Procópio, Fernanda Coura, Rúbia Karina</li>
-  <li>Equipe de Design: Anna Freitas</li>
+  <li>Desenvolvido por: Josué Maciel</li>
 </ul>
 
 ### Processo
 
-Para organização e distribuição das tarefas do projeto, a equipe está utilizando o GitHub, estruturado com as seguintes listas: 
+Para organização das atividades foi utilizado o GitHub Projects, seguindo um fluxo baseado na metodologia Kanban.
+
+O quadro foi estruturado com as seguintes etapas: 
 
 <ul>
-  <li>Backlog: esta coluna representa o Product Backlog e recebe as Tarefas do Projeto a serem trabalhadas.</li>
-  <li>To Do: esta coluna representa o Sprint Backlog que está sendo trabalhado.</li>
-  <li>In progress: lista das tarefas iniciadas.</li>
-  <li>Ready to Test: tarefas prontas para Testes.</li>
-  <li>Testing: tarefas em Revisão e/ou Teste.</li>
-  <li>Done: tarefas concluídas.</li>
+  <li>Backlog: funcionalidades e melhorias planejadas.</li>
+  <li>To Do: tarefas prontas para desenvolvimento.</li>
+  <li>In progress: tarefas em desenvolvimento.</li>
+  <li>Rewiew: funcionalidades concluídas aguardando revisão.</li>
+  <li>Done: funcionalidades finalizadas e validadas.</li>
  </ul>
 
-O quadro Kanban do grupo no GitHub está disponível no link [Projects](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-e1-exemplo-vida-de-estudante/blob/main/documentos/img/Kanbanvidaestudante.png) e é apresentado, no estado atual, na figura abaixo:
 
-<figure> 
-  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-e1-exemplo-vida-de-estudante/blob/main/documentos/img/Kanbanvidaestudante.png"
-    <figcaption>Figura 2 - Tela do kanban no GitHub utilizada pelo grupo</figcaption>
-</figure> 
+Essa organização permite acompanhar a evolução do projeto e controlar as entregas durante todo o desenvolvimento.
 
-  
+##Versionamento
+
+O controle de versão é realizado utilizando Git integrado ao GitHub, permitindo registrar todas as alterações do projeto por meio de commits organizados.
+
+O repositório também possibilita o gerenciamento do histórico de desenvolvimento, facilitando futuras manutenções e implementações.
+
 <h3>Etiquetas</h3>
 <p>As tarefas são, ainda, etiquetadas em função da natureza da atividade e seguem o seguinte esquema de cores/categorias:</p>
 
@@ -57,27 +56,15 @@ O quadro Kanban do grupo no GitHub está disponível no link [Projects](https://
   
 ### Ferramentas
 
-As ferramentas empregadas no projeto são:
+As principais ferramentas utilizadas durante o desenvolvimento são:
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
+| Ferramenta |	Finalidade |
+| Visual Studio Code	| Desenvolvimento do código-fonte |
+| Git	| Controle de versão |
+| GitHub	| Hospedagem do repositório e gerenciamento do projeto |
+| GitHub Projects	| Organização das tarefas utilizando Kanban |
+| Figma	| Desenvolvimento do wireframe e prototipação da interface |
+| Google Chrome | Testes e inspeção da aplicação |
 
-O editor de código foi escolhido porque ele possui uma integração com o
-sistema de versão. As ferramentas de comunicação utilizadas possuem
-integração semelhante e por isso foram selecionadas. Por fim, para criar
-diagramas utilizamos essa ferramenta por melhor captar as
-necessidades da nossa solução.
 
-<p>Os artefatos do projeto são desenvolvidos a partir das plataformas GitHub e MarvelApp, apresentadas com seu propósito na tabela que se segue.<p/>
-
-| AMBIENTE | PLATAFORMA |LINK DE ACESSO                 |
-|--------------------|--------------------------------------------------------------------------------|----------------------------------------|
-|Repositório de código fonte | GitHub | https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-e1-exemplo-vida-de-estudante/blob/main/codigo-fonte/README.md  |
-|Documentos do projeto  | GitHub | https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-e1-exemplo-vida-de-estudante/blob/main/  |
-|Projeto de interface e wireframes | MarvelApp | https://marvelapp.com/prototype/i39bj37/screen/86143037 |
-|Gerenciamento do projeto  | GitHub | [https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-e1-exemplo-vida-de-estudante/projects/2](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t3-vida-de-estudante/projects/2) |
-
-### Estratégia de Organização de Codificação 
-
-Todos os artefatos relacionados a implementação e visualização dos conteúdos do projeto da aplicação foram inseridos na pasta [codigo-fonte](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-e1-exemplo-vida-de-estudante/tree/main/codigo-fonte). 
+<p>Os artefatos do projeto são desenvolvidos a partir das plataformas GitHub e Figma.<p/>
