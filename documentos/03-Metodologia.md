@@ -54,63 +54,69 @@ O repositório também possibilita o gerenciamento do histórico de desenvolvime
     <figcaption>Figura 3 - Tela do esquema de cores e categorias</figcaption>
 </figure> 
   
-### Ferramentas
+## Ferramentas
 
-As principais ferramentas utilizadas durante o desenvolvimento são:
+As principais ferramentas utilizadas durante o desenvolvimento do projeto são apresentadas na tabela a seguir.
 
-|------|-----------------------------------------|
-| Ferramenta |	Finalidade |
-| Visual Studio Code	| Desenvolvimento do código-fonte |
-| Git	| Controle de versão |
-| GitHub	| Hospedagem do repositório e gerenciamento do projeto |
-| GitHub Projects	| Organização das tarefas utilizando Kanban |
-| Figma	| Desenvolvimento do wireframe e prototipação da interface |
-| Google Chrome | Testes e inspeção da aplicação |
+| Ferramenta | Finalidade |
+|------------|------------|
+| Visual Studio Code | Desenvolvimento do código-fonte |
+| Git | Controle de versão |
+| GitHub | Hospedagem do repositório e versionamento do projeto |
+| GitHub Projects | Organização e gerenciamento das tarefas utilizando Kanban |
+| Figma | Desenvolvimento do wireframe e prototipação da interface |
+| Google Chrome | Testes, inspeção e validação da aplicação |
 
+Os artefatos do projeto são desenvolvidos utilizando as plataformas **GitHub** e **Figma**, responsáveis pelo versionamento do código-fonte, gerenciamento do projeto e elaboração da interface.
 
-<p>Os artefatos do projeto são desenvolvidos a partir das plataformas GitHub e Figma.<p/>
+---
 
-##Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
-O desenvolvimento da aplicação utiliza as seguintes tecnologias:
+As tecnologias empregadas no desenvolvimento da aplicação são apresentadas na tabela abaixo.
 
-HTML5
-CSS3
-JavaScript (ES6+)
-Google Maps API
-Git
-GitHub
+| Tecnologia | Finalidade |
+|------------|------------|
+| HTML5 | Estruturação das páginas |
+| CSS3 | Estilização e responsividade |
+| JavaScript (ES6+) | Interatividade e manipulação da interface |
+| Google Maps API | Exibição da localização das unidades da Ambrozini |
+| Git | Controle de versão |
+| GitHub | Hospedagem e gerenciamento do repositório |
 
-##Estratégia de Organização do Código
+---
 
-O projeto foi estruturado de forma modular, buscando facilitar a manutenção e futuras expansões.
+## Estratégia de Organização do Código
 
-A organização segue a seguinte estrutura:
+O projeto foi organizado de forma modular, visando facilitar a manutenção, reutilização de componentes e futuras expansões.
 
+A estrutura de diretórios está organizada da seguinte forma:
+
+```text
 ambrozini-website/
-
-assets/
 │
-├── css/
-│   ├── home.css
-│   ├── eventos.css
-│   ├── pedro.css
-│   ├── menu.css
-│   └── footer.css
+├── assets/
+│   ├── css/
+│   │   ├── home.css
+│   │   ├── eventos.css
+│   │   ├── pedro.css
+│   │   ├── menu.css
+│   │   └── footer.css
+│   │
+│   ├── js/
+│   │   ├── home.js
+│   │   ├── eventos.js
+│   │   ├── pedro.js
+│   │   └── menu.js
+│   │
+│   ├── img/
+│   ├── videos/
+│   └── icons/
 │
-├── js/
-│   ├── home.js
-│   ├── eventos.js
-│   ├── pedro.js
-│   └── menu.js
-│
-├── img/
-├── videos/
-└── icons/
+├── index.html
+├── eventos.html
+├── pedro.html
+└── README.md
+```
 
-index.html
-eventos.html
-pedro.html
-README.md
-
-A organização modular permite que cada página possua seus próprios arquivos de estilização e scripts, enquanto componentes compartilhados, como menu e rodapé, permanecem separados para facilitar a reutilização do código e reduzir a duplicidade de implementação.
+Cada página possui arquivos próprios de estilização (CSS) e interatividade (JavaScript), permitindo maior organização e facilidade na manutenção do código. Componentes compartilhados, como o menu de navegação e o rodapé, são mantidos em arquivos independentes para promover reutilização e padronização entre as páginas do website.
