@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "Avory";
+    src: url("../../assets/fonts/AVORY-I-PE-THIN.OTF") format("opentype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Avory";
+    src: url("../../assets/fonts/AVORY-I-PE-LIGHT.OTF") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Avory";
+    src: url("../../assets/fonts/AVORY-I-PE-MEDIUM.OTF") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Avory";
+    src: url("../../assets/fonts/AVORY-I-PE-SEMIBOLD.OTF") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Avory";
+    src: url("../../assets/fonts/AVORY-I-PE-BOLD.OTF") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Avory";
+    src: url("../../assets/fonts/AVORY-I-PE-EXTRABOLD.OTF") format("opentype");
+    font-weight: 800;
+    font-style: normal;
+}

@@ -1,9 +1,3 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
 .menu-header{
     position:fixed;
     top:0;
@@ -37,12 +31,12 @@
 .menu-link{
     text-decoration:none;
     color:#F5F1EB;
-    font-size:14px;
+    font-size:12px;
     font-weight:500;
     letter-spacing:1px;
     text-transform:uppercase;
     transition:.3s;
-    font-family: "Avory PE Variable", sans-serif;
+    font-family: "Avory", sans-serif;
 }
 
 .menu-link:hover{
