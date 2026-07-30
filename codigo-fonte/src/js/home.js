@@ -1,13 +1,28 @@
-const imagens = document.querySelectorAll('#hero .hero-image');
+const heroSlides = document.querySelectorAll(".hero-slide");
 
-let indiceAtual = 0;
-const TEMPO_TROCA = 5000;
+let currentSlide = 0;
+const slideInterval = 8000;
 
-function alternarFoto() {
+function showSlide(index){
 
-  imagens[indiceAtual].classList.remove('ativa');
-  indiceAtual = (indiceAtual + 1) % imagens.length;
-  imagens[indiceAtual].classList.add('ativa');
+    heroSlides.forEach(slide => {
+        slide.classList.remove("active");
+    });
+
+    heroSlides[index].classList.add("active");
 }
 
-setInterval(alternarFoto, TEMPO_TROCA);
+function nextSlide(){
+
+    currentSlide++;
+
+    if(currentSlide >= heroSlides.length){
+        currentSlide = 0;
+    }
+
+    showSlide(currentSlide);
+}
+
+showSlide(currentSlide);
+
+setInterval(nextSlide, slideInterval);

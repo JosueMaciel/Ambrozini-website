@@ -3,7 +3,6 @@
 
 <head>
 
-    <!-- Configurações -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -22,10 +21,11 @@
     <meta name="theme-color" content="#52302C">
 
     <!-- Favicon -->
-    <link rel="icon" href="/codigo-fonte/src/assets/img/Icone url Logo.png">
+    <link rel="icon" href="/codigo-fonte/assets/img/Icone url Logo.png">
 
     <!-- CSS -->
     <link rel="stylesheet" href="/codigo-fonte/src/css/fonts.css">
+    <link rel="stylesheet" href="/codigo-fonte/src/css/variables.css">
     <link rel="stylesheet" href="/codigo-fonte/src/css/menu.css">
     <link rel="stylesheet" href="/codigo-fonte/src/css/home.css">
 
@@ -33,20 +33,82 @@
 
 <body class="home-page">
 
-    <main>
+    <main class="home-main">
 
-        <div id="hero">
-            <img src="/codigo-fonte/assets/img/Hero restaurante.png" alt="Hero restaurante" class="hero-image ativa">
-            <img src="/codigo-fonte/assets/img/Hero delivery.png" alt="Hero delivery" class="hero-image">
-        </div>
+        <section class="hero">
 
+            <div class="hero-overlay">
+
+                <h1 class="hero-title">
+                    Todo dia é dia de comer bem
+                </h1>
+
+                <p class="hero-description">
+                    Visite nossas unidades ou peça pelo
+                    delivery e desfrute da experiência
+                    Ambrozini onde estiver.
+                </p>
+
+                <a href="https://www.ambrozini.com.br/delivery" class="hero-button">
+                Peça pelo ifood
+                </a>
+
+            </div>
+
+            <div class="hero-social">
+
+                <a href="https://www.instagram.com/ambrozinirestaurante/" class="hero-social-link">
+                    <img src="/codigo-fonte/assets/img/instagram.svg" alt="Instagram">
+                </a>
+
+                <a href="https://www.tiktok.com/@ambrozinirestaurante?_r=1&_t=ZS-98TJRRd4iwe" class="hero-social-link">
+                    <img src="/codigo-fonte/assets/img/tiktok.svg" alt="TikTok">
+                </a>
+
+                <a href="https://www.linkedin.com/company/ambrozini/" class="hero-social-link">
+                    <img src="/codigo-fonte/assets/img/linkedin.svg" alt="LinkedIn">
+                </a>
+
+                <a href="https://www.facebook.com/ambrozinimix" class="hero-social-link">
+                    <img src="/codigo-fonte/assets/img/facebook.svg" alt="facebook">
+                </a>
+
+            </div>
+
+            <div class="hero-slide active">
+
+                <img src="/codigo-fonte/assets/img/Hero restaurante.png"
+                    alt="Ambrozini Restaurantes"
+                    class="hero-image">
+
+            </div>
+
+            <div class="hero-slide">
+
+                <img src="/codigo-fonte/assets/img/Hero delivery.png"
+                    alt="Ambrozini Delivery"
+                    class="hero-image">
+
+            </div>
+
+        </section>
+
+        <section class="numbers">
+
+            
+
+        </section>
+
+        <section class="restaurants"></section>
+
+        <section class="gallery"></section>
+
+        <section class="events-banner"></section>
+
+        <section class="contact"></section>
 
     </main>
 
-    <!-- FOOTER -->
-    <div id="footer"></div>
-
-    <!-- JavaScript -->
     <script src="/codigo-fonte/src/js/menu.js"></script>
     <script src="/codigo-fonte/src/js/home.js"></script>
 
