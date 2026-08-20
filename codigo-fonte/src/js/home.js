@@ -49,3 +49,44 @@ showSlide(currentSlide);
 controlSlider();
 
 mobileScreen.addEventListener("change", controlSlider);
+
+const gallerySlider = document.querySelector(".gallery-slider");
+const galleryButtonPrev = document.querySelector(".gallery-button-prev");
+const galleryButtonNext = document.querySelector(".gallery-button-next");
+
+
+function galleryNext(){
+
+    const firstImage = gallerySlider.firstElementChild;
+
+    gallerySlider.appendChild(firstImage);
+}
+
+
+function galleryPrev(){
+
+    const lastImage = gallerySlider.lastElementChild;
+
+    gallerySlider.insertBefore(
+        lastImage,
+        gallerySlider.firstElementChild
+    );
+}
+
+
+if(mobileScreen.matches){
+
+    const galleryImages = gallerySlider.querySelectorAll(".gallery-image");
+
+    const randomIndex = Math.floor(Math.random() * galleryImages.length);
+
+    for(let i = 0; i < randomIndex; i++){
+
+        const firstImage = gallerySlider.firstElementChild;
+
+        gallerySlider.appendChild(firstImage);
+    }
+}
+
+galleryButtonNext.addEventListener("click", galleryNext);
+galleryButtonPrev.addEventListener("click", galleryPrev);

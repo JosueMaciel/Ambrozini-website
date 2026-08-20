@@ -187,7 +187,7 @@
 }
 
 .restaurants-title{
-    margin: 0 0 5px;
+    margin: 0 0 15px;
     color: #52302C;
     font-family: "Avory", sans-serif;
     font-size: 26px;
@@ -213,7 +213,7 @@
 .restaurants-list{
     width: 100%;
     max-width: 1100px;
-    margin: 20px auto 0;
+    margin: 35px auto 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 60px;
@@ -231,8 +231,8 @@
 }
 
 .restaurant-image{
-    width: 138px;
-    height: 138px;
+    width: 238px;
+    height: 238px;
     display: block;
     object-fit: cover;
     border: 1px solid #E1AD01;
@@ -258,15 +258,15 @@
 }
 
 .restaurant-qr{
-    width: 65px;
-    height: 65px;
+    width: 85px;
+    height: 85px;
     display: block;
     margin-top: 20px;
 }
 
 .restaurants-actions{
     max-width: 700px;
-    margin: 15px auto 0;
+    margin: 45px auto 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -304,8 +304,8 @@
 }
 
 .action-qr{
-    width: 65px;
-    height: 65px;
+    width: 85px;
+    height: 85px;
     display: block;
 }
 
@@ -314,7 +314,134 @@
 }
 
 .restaurants-delivery .action-content h3{
-    color: #009C9C;
+    color: #008080;
+}
+
+.gallery{
+    width: 100%;
+    background: #F5F1EB;
+    padding: 0 0 30px;
+    box-sizing: border-box;
+}
+
+.gallery-title{
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 20px 0 10px;
+    text-align: center;
+    color: #52302C;
+    font-family: "Avory", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.gallery-container{
+    position: relative;
+    width: 100%;
+    height: 480px;
+    background: #F5EACB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.gallery-slider{
+    position: relative;
+    width: 830px;
+    height: 300px;
+}
+
+.gallery-image{
+    position: absolute;
+    top: 50%;
+    width: 390px;
+    height: 510px;
+    object-fit: cover;
+    transform: translateY(-50%);
+    border: 1px solid #E1AD01;
+    border-radius: 10px;
+    transition:
+        left .5s ease,
+        width .5s ease,
+        height .5s ease,
+        opacity .5s ease,
+        transform .5s ease;
+}
+
+.gallery-image:nth-child(1){
+    left: 0;
+    width: 215px;
+    height: 400px;
+    z-index: 1;
+}
+
+.gallery-image:nth-child(2){
+    left: 95px;
+    width: 250px;
+    height: 415px;
+    z-index: 2;
+}
+
+.gallery-image:nth-child(3){
+    left: 265px;
+    width: 295px;
+    height: 430px;
+    z-index: 5;
+}
+
+.gallery-image:nth-child(4){
+    left: 440px;
+    width: 250px;
+    height: 415px;
+    z-index: 2;
+}
+
+.gallery-image:nth-child(5){
+    left: 570px;
+    width: 215px;
+    height: 400px;
+    z-index: 1;
+}
+
+.gallery-image:nth-child(n+6){
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.gallery-button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.gallery-button svg{
+    width: 42px;
+    height: 42px;
+    fill: #008080;
+}
+
+.gallery-button-prev{
+    left: 50px;
+}
+
+.gallery-button-next{
+    right: 50px;
+}
+
+.gallery-button:hover svg{
+    filter: brightness(.85);
 }
 
 @media (max-width:768px){
@@ -341,14 +468,14 @@
     }
 
     .hero-description{
-        font-size:20px;
+        font-size:15px;
         line-height:1.5;
     }
 
     .hero-button{
-        width:220px;
-        height:70px;
-        font-size:25px;
+        width:180px;
+        height:50px;
+        font-size:20px;
     }
 
     .hero-button:hover{
@@ -456,8 +583,8 @@
     }
 
     .restaurant-image{
-        width: 150px;
-        height: 150px;
+        width: 250px;
+        height: 250px;
     }
 
     .restaurant-name{
@@ -470,7 +597,14 @@
     }
 
     .restaurant-qr{
-        margin-top: 15px;
+        width: 95px;
+        height: 95px;
+        margin-top: 20px;
+    }
+
+    .action-qr{
+        width: 95px;
+        height: 95px;
     }
 
     .restaurants-actions{
@@ -479,6 +613,7 @@
         flex-direction: column;
         gap: 25px;
         margin-top: 40px;
+        font-size: 35px;
     }
 
     .action-content{
@@ -491,5 +626,55 @@
 
     .restaurants-delivery .action-content{
         text-align: left;
+    }
+
+    .gallery{
+        padding: 0 0 20px;
+    }
+
+    .gallery-title{
+        padding: 18px 0 10px;
+        font-size: 24px;
+    }
+
+    .gallery-container{
+        height: 380px;
+    }
+
+    .gallery-slider{
+        width: 100%;
+        height: 330px;
+    }
+
+    .gallery-image{
+        left: 50% !important;
+        top: 50%;
+        width: 250px !important;
+        height: 330px !important;
+        transform: translate(-50%, -50%);
+    }
+
+    .gallery-image:nth-child(n+2){
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .gallery-button{
+        width: 40px;
+        height: 40px;
+    }
+
+    .gallery-button svg{
+        width: 35px;
+        height: 35px;
+    }
+
+    .gallery-button-prev{
+        left: 10px;
+    }
+
+    .gallery-button-next{
+        right: 10px;
     }
 }
