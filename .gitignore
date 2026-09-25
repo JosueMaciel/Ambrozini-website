@@ -1,0 +1,28 @@
+# Arquivos do Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Arquivos temporários
+*.log
+*.tmp
+*.temp
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Vídeos grandes
+codigo-fonte/assets/vídeos/*.mp4
+codigo-fonte/assets/vídeos/*.mov
+codigo-fonte/assets/vídeos/*.avi
+
+# Arquivos de configuração local
+.env
+.env.local
+
+# Dependências
+node_modules/
+
+# Builds e arquivos gerados
+dist/
+build/
