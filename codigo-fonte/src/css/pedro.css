@@ -1,0 +1,544 @@
+.pedro-about {
+    width: 100%;
+    padding: 80px 8% 100px;
+    background-color: #F5F1EB;
+    box-sizing: border-box;
+}
+
+.pedro-about-container {
+    display: grid;
+    grid-template-columns: 38% 1fr;
+    gap: 70px;
+    max-width: 1250px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.pedro-profile {
+    width: 100%;
+    min-width: 0;
+}
+
+.pedro-profile h1 {
+    margin: 0 0 25px;
+    font-family: "Avory", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #52302C;
+}
+
+.pedro-profile-image {
+    display: block;
+    width: 100%;
+    height: 730px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 4px;
+}
+
+.pedro-profile-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.pedro-social {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.pedro-social a {
+    color: #E1AD01;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.pedro-social a:hover {
+    color: #52302C;
+}
+
+.pedro-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.pedro-contact span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #52302C;
+}
+
+.pedro-contact-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 35px;
+    background: #E1AD01;
+    color: #52302C;
+    font-family: "Avory", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+.pedro-contact-button:hover {
+    filter: brightness(.95);
+    color: #F5F1EB;
+}
+
+.pedro-contact-button:active {
+    filter: brightness(.95);
+    color: #F5F1EB;
+}
+
+.pedro-biography {
+    min-width: 0;
+    color: #52302C;
+}
+
+.pedro-biography h2 {
+    margin: 0 0 25px;
+    font-family: "Avory", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #52302C;
+}
+
+.pedro-biography p {
+    margin: 0 0 22px;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #52302C;
+}
+
+.pedro-quote {
+    margin: 35px 0 0;
+    padding: 20px 0 20px 25px;
+    border-left: 4px solid #E1AD01;
+    font-family: "Avory", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.5;
+    color: #52302C;
+}
+
+.pedro-timeline {
+    width: 100%;
+    padding: 90px 8% 110px;
+    background-color: #52302C;
+    box-sizing: border-box;
+}
+
+.pedro-timeline-container {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.pedro-timeline h2 {
+    margin: 0 0 55px;
+    font-family: "Avory", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #F5F1EB;
+    text-align: center;
+}
+
+.pedro-timeline-visual {
+    position: relative;
+    width: 100%;
+    height: 160px;
+}
+
+.pedro-timeline-path {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+.pedro-timeline-path path {
+    fill: none;
+    stroke: #E1AD01;
+    stroke-width: 3;
+    stroke-linecap: round;
+}
+
+.pedro-timeline-markers {
+    position: absolute;
+    inset: 0;
+}
+
+.pedro-timeline-marker {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 66px;
+    height: 66px;
+    border: 2px solid #E1AD01;
+    border-radius: 50%;
+    background-color: #52302C;
+    color: #F5F1EB;
+    font-family: "Avory", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.pedro-timeline-marker:nth-child(1) {
+    left: 3%;
+    top: 56.25%;
+}
+
+.pedro-timeline-marker:nth-child(2) {
+    left: 26.5%;
+    top: 34.4%;
+}
+
+.pedro-timeline-marker:nth-child(3) {
+    left: 50%;
+    top: 65.6%;
+}
+
+.pedro-timeline-marker:nth-child(4) {
+    left: 73.5%;
+    top: 40.6%;
+}
+
+.pedro-timeline-marker:nth-child(5) {
+    left: 97%;
+    top: 43.75%;
+}
+
+.pedro-timeline-events {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 55px;
+}
+
+.pedro-timeline-event {
+    min-width: 0;
+    text-align: center;
+}
+
+.pedro-timeline-event h3 {
+    margin: 0 0 14px;
+    font-family: "Avory", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #E1AD01;
+}
+
+.pedro-timeline-event p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.65;
+    color: #F5F1EB;
+}
+
+.pedro-values {
+    width: 100%;
+    padding: 100px 8%;
+    background-color: #F5F1EB;
+    box-sizing: border-box;
+}
+
+.pedro-values-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 70px;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.pedro-values-content {
+    min-width: 0;
+}
+
+.pedro-values-quote {
+    margin: 0 0 55px;
+    font-family: "Avory", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.4;
+    color: #52302C;
+}
+
+.pedro-values-content h2 {
+    margin: 0 0 25px;
+    font-family: "Avory", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #52302C;
+}
+
+.pedro-values-content p {
+    margin: 0 0 20px;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #52302C;
+}
+
+.pedro-values-content p:last-child {
+    margin-bottom: 0;
+}
+
+.pedro-values-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+}
+
+.pedro-values-image {
+    display: block;
+    width: auto;
+    height: 700px;
+    object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+
+    .pedro-about {
+        padding: 70px 5%;
+    }
+
+    .pedro-about-container {
+        grid-template-columns: 40% 1fr;
+        gap: 35px;
+    }
+
+    .pedro-profile h1 {
+        font-size: 30px;
+    }
+
+    .pedro-profile-image {
+        height: 400px;
+    }
+
+    .pedro-biography h2 {
+        font-size: 23px;
+    }
+
+    .pedro-biography p {
+        font-size: 15px;
+    }
+
+    .pedro-quote {
+        font-size: 22px;
+    }
+
+    .pedro-timeline {
+        padding: 75px 5% 90px;
+    }
+
+    .pedro-timeline h2 {
+        font-size: 34px;
+        margin-bottom: 45px;
+    }
+
+    .pedro-timeline-visual {
+        height: 140px;
+    }
+
+    .pedro-timeline-marker {
+        width: 55px;
+        height: 55px;
+        font-size: 14px;
+    }
+
+    .pedro-timeline-events {
+        gap: 15px;
+        margin-top: 40px;
+    }
+
+    .pedro-timeline-event h3 {
+        font-size: 21px;
+    }
+
+    .pedro-timeline-event p {
+        font-size: 13px;
+    }
+
+    .pedro-values {
+        padding: 75px 5%;
+    }
+
+    .pedro-values-container {
+        gap: 35px;
+    }
+
+    .pedro-values-quote {
+        font-size: 25px;
+        margin-bottom: 35px;
+    }
+
+    .pedro-values-content h2 {
+        font-size: 30px;
+    }
+
+    .pedro-values-content p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .pedro-about {
+        padding: 50px 20px 70px;
+    }
+
+    .pedro-about-container {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .pedro-profile {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    .pedro-profile h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .pedro-profile-image {
+        width: 100%;
+        height: 430px;
+        object-position: center top;
+    }
+
+    .pedro-profile-footer {
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .pedro-social {
+        gap: 12px;
+    }
+
+    .pedro-social a {
+        font-size: 14px;
+    }
+
+    .pedro-contact span {
+        font-size: 13px;
+    }
+
+    .pedro-contact-button {
+        padding: 12px 25px;
+        font-size: 13px;
+    }
+
+    .pedro-biography h2 {
+        font-size: 23px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .pedro-biography p {
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 20px;
+    }
+
+    .pedro-quote {
+        margin-top: 30px;
+        padding-left: 18px;
+        font-size: 21px;
+    }
+
+    .pedro-values {
+        padding: 65px 20px 80px;
+    }
+
+    .pedro-values-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .pedro-values-quote {
+        font-size: 24px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .pedro-values-content h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .pedro-values-content p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .pedro-values-image {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .pedro-profile-image {
+        height: 370px;
+    }
+
+    .pedro-profile-footer {
+        flex-wrap: wrap;
+    }
+
+    .pedro-profile h1 {
+        font-size: 27px;
+    }
+
+    .pedro-biography h2 {
+        font-size: 21px;
+    }
+
+    .pedro-timeline h2 {
+        font-size: 27px;
+    }
+
+    .pedro-timeline-events {
+        padding-left: 30px;
+    }
+
+    .pedro-timeline-event::before {
+        left: -38px;
+    }
+
+    .pedro-timeline-event p {
+        font-size: 14px;
+    }
+
+    .pedro-values-quote {
+        font-size: 21px;
+    }
+
+    .pedro-values-content h2 {
+        font-size: 27px;
+    }
+}
