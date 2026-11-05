@@ -56,24 +56,29 @@
     cursor:pointer;
 }
 
-@media (max-width:768px){
-.menu-mobile-button{
-display:block;
-}
+@media (max-width: 768px) {
 
-.menu-links{
-position:absolute;
-top:72px;
-left:0;
-width:100%;
-background:#52302C;
-display:none;
-flex-direction:column;
-padding:30px 0;
-gap:25px;
-}
+    .menu-mobile-button {
+        display: block;
+    }
 
-.menu-links.menu-open{
-display:flex;
-}
+    .menu-links {
+        position: absolute;
+        top: 72px;
+        left: 0;
+        width: 100%;
+        background: #52302C;
+        display: none;
+        flex-direction: column;
+        padding: 30px 0;
+        gap: 25px;
+    }
+
+    .menu-links.menu-open {
+        display: flex;
+    }
+    
+    .menu-link {
+        font-size: 20px;
+    }
 }
