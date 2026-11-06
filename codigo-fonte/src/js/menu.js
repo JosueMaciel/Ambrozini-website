@@ -26,7 +26,7 @@ const menu = `
             </li>
 
             <li class="menu-item">
-                <a href="#contato" class="menu-link">Contato</a>
+                <a href="contato.html" class="menu-link">Contato</a>
             </li>
 
         </ul>

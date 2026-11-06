@@ -1,3 +1,12 @@
+html,
+body {
+    background-color: #F5F1EB;
+}
+
+body > main {
+    background-color: #F5F1EB;
+}
+
 .pedro-about {
     width: 100%;
     padding: 80px 8% 100px;

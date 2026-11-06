@@ -15,6 +15,26 @@ function showSlide(index){
     heroSlides[index].classList.add("active");
 }
 
+const downloadButton = document.getElementById("download-ifood");
+
+if (downloadButton) {
+    downloadButton.addEventListener("click", function(event) {
+        event.preventDefault();
+
+        const device = navigator.userAgent;
+
+        if (/iPhone|iPad|iPod/i.test(device)) {
+            window.location.href = "https://apps.apple.com/br/app/ifood-pedir-delivery-em-casa/id483017239";
+
+        } else if (/Android/i.test(device)) {
+            window.location.href = "https://play.google.com/store/apps/details?id=br.com.brainweb.ifood";
+
+        } else {
+            window.location.href = "https://www.ifood.com.br/";
+        }
+    });
+}
+
 function nextSlide(){
 
     currentSlide++;
