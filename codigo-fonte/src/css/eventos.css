@@ -70,9 +70,9 @@ body > main {
     position:relative;
     width:100%;
     box-sizing:border-box;
-    background-image: 
-        linear-gradient(rgba(82,48,44,.78), rgba(82,48,44,.78)),
-        url("/codigo-fonte/assets/img/DSC02600.jpg");
+    background-image:
+    linear-gradient(rgba(82,48,44,.78), rgba(82,48,44,.78)),
+    url("/codigo-fonte/assets/img/DSC02600.jpg");
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -205,15 +205,15 @@ body > main {
     display:flex;
 }
 
-.event-modal-content{
-    position:relative;
-    width:100%;
-    max-width:950px;
-    max-height:90vh;
-    background:#F5F1EB;
-    border-radius:8px;
-    overflow-y:auto;
-    box-sizing:border-box;
+.event-modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 850px;
+    max-height: 90vh;
+    background: #F5F1EB;
+    border-radius: 8px;
+    overflow-y: auto;
+    box-sizing: border-box;
 }
 
 .event-modal-close{
@@ -233,18 +233,28 @@ body > main {
     cursor:pointer;
 }
 
-.event-modal-body{
-    padding:45px;
-    font-family:"Avory",sans-serif;
-    color:#52302C;
-    display:flow-root;
+.event-modal-body {
+    display: grid;
+    grid-template-columns: 42% minmax(0, 1fr);
+    grid-template-areas:
+    "image advantages"
+    "title title"
+    "description description"
+    "cta cta";
+    column-gap: 30px;
+    row-gap: 18px;
+    padding: 40px;
+    font-family: "Avory", sans-serif;
+    color: #52302C;
+    box-sizing: border-box;
 }
 
-.event-modal-image-container{
-    float:left;
-    width:280px;
-    height:280px;
-    margin:0 30px 18px 0;
+.event-modal-image-container {
+    grid-area: image;
+    float: none;
+    width: 100%;
+    height: 300px;
+    margin: 0;
 }
 
 .event-modal-image{
@@ -255,42 +265,63 @@ body > main {
     border-radius:6px;
 }
 
-.event-modal-title{
-    margin:0 0 20px;
-    font-family:"Avory",sans-serif;
-    font-size:28px;
-    font-weight:700;
-    color:#52302C;
+.event-modal-title {
+    grid-area: title;
+    margin: 0;
+    font-family: "Avory", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #52302C;
 }
 
-.event-modal-description{
-    margin:0 0 25px;
-    font-family:"Avory",sans-serif;
-    font-size:15px;
-    font-weight:300;
-    line-height:1.8;
-    color:#52302C;
-    white-space:pre-line;
+.event-modal-description {
+    grid-area: description;
+    margin: 0;
+    font-family: "Avory", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #52302C;
+    white-space: pre-line;
 }
 
-.event-modal-advantages{
-    clear:both;
-    margin:25px 0;
-    font-family:"Avory",sans-serif;
-    font-size:14px;
-    line-height:1.7;
-    color:#52302C;
+.event-modal-advantages {
+    grid-area: advantages;
+    clear: none;
+    margin: 0;
+    font-family: "Avory", sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #52302C;
 }
 
-.event-modal-advantages p{
-    margin:0 0 8px;
+.event-modal-advantages p {
+    position: relative;
+    margin: 0 0 4px;
+    padding-left: 16px;
 }
 
-.event-modal-cta{
-    clear:both;
-    display:flex;
-    justify-content:center;
-    margin-top:35px;
+.event-modal-advantages p:not(:first-child)::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #52302C;
+    font-size: 16px;
+}
+
+.event-modal-advantages p:first-child {
+    padding-left: 0;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.event-modal-cta {
+    grid-area: cta;
+    clear: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
 }
 
 .event-modal-button{
@@ -524,11 +555,11 @@ body > main {
     border: 1px solid #E1AD01;
     border-radius: 10px;
     transition:
-        left .5s ease,
-        width .5s ease,
-        height .5s ease,
-        opacity .5s ease,
-        transform .5s ease;
+    left .5s ease,
+    width .5s ease,
+    height .5s ease,
+    opacity .5s ease,
+    transform .5s ease;
 }
 
 .gallery-image:nth-child(1){
@@ -789,64 +820,51 @@ body > main {
 }
 
 @media (max-width: 900px) {
-
     .events-spaces {
         padding: 40px 5% 70px;
     }
-
     .events-spaces-list {
         gap: 20px;
     }
-
     .events-space-image {
         height: 320px;
     }
-
     .events-space-content {
         padding: 24px;
     }
-
     .events-space-content h3 {
         font-size: 26px;
     }
 }
 
 @media (max-width: 768px){
-
     .events-hero{
         height: 340px;
     }
-
     .events-hero-content{
         left: 5%;
         bottom: 12%;
     }
-
     .events-hero-content h1{
         font-size: 15px;
         margin-bottom: 10px;
     }
-
     .events-hero-button{
         width: 100px;
         height: 28px;
         font-size: 8px;
     }
-
     .events{
         padding:40px 5% 50px;
     }
-
     .events-title{
         font-size:21px;
         margin-bottom:25px;
     }
-
     .events-list {
         grid-template-columns: 1fr;
         gap: 35px;
     }
-
     .event-card::after {
         content: "Ver detalhes +";
         display: block;
@@ -863,118 +881,98 @@ body > main {
         pointer-events: none;
         z-index: 2;
     }
-
     .event-card-image {
         height: 220px;
         margin-bottom: 15px;
     }
-
     .event-card-title {
         font-size: 20px;
     }
-
     .event-card-description {
         font-size: 15px;
         line-height: 1.5;
     }
-
     .events-cta{
         margin-top:40px;
     }
-
     .events-cta-title{
         font-size:16px;
     }
-
     .event-modal{
-    padding:12px;
+        padding:12px;
     }
-
     .event-modal-content{
         max-height:92vh;
     }
-
-    .event-modal-body{
-        padding:45px 22px 25px;
+    .event-modal-body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "image"
+        "advantages"
+        "title"
+        "description"
+        "cta";
+        gap: 18px;
+        padding: 45px 22px 25px;
     }
-
-    .event-modal-image-container{
-        float:none;
-        width:100%;
-        height:220px;
-        margin:0 0 22px;
+    .event-modal-image-container {
+        width: 100%;
+        height: 220px;
+        margin: 0;
     }
-
-    .event-modal-title{
-        font-size:23px;
-        margin-bottom:15px;
+    .event-modal-title {
+        font-size: 23px;
     }
-
-    .event-modal-description{
-        font-size:14px;
-        line-height:1.7;
+    .event-modal-description {
+        font-size: 14px;
+        line-height: 1.7;
     }
-
-    .event-modal-advantages{
-        font-size:13px;
+    .event-modal-advantages {
+        font-size: 13px;
     }
-
-    .event-modal-cta{
-        margin-top:25px;
+    .event-modal-cta {
+        margin-top: 10px;
     }
-
     .event-modal-button{
         width:100%;
         max-width:320px;
         font-size:13px;
     }
-
     .events-spaces {
         padding: 35px 20px 60px;
     }
-
     .events-spaces-header {
         margin-bottom: 35px;
     }
-
     .events-spaces-header h2 {
         font-size: 30px;
         line-height: 1.2;
     }
-
     .events-spaces-header p {
         font-size: 15px;
     }
-
     .events-spaces-list {
         grid-template-columns: 1fr;
         gap: 30px;
     }
-
     .events-space-image {
         height: 330px;
     }
-
     .events-space-content {
         padding: 25px 20px;
     }
-
     .events-space-content h3 {
         font-size: 26px;
     }
-
     .events-space-content > p:not(.events-space-address) {
         font-size: 15px;
     }
-
     .events-space-address {
         font-size: 13px;
     }
-
     .events-spaces-footer {
         margin-top: 35px;
     }
-
     .events-spaces-button {
         width: 100%;
         max-width: 350px;
@@ -982,45 +980,36 @@ body > main {
         box-sizing: border-box;
         text-align: center;
     }
-
     .events-clients{
-    padding:35px 5% 45px;
+        padding:35px 5% 45px;
     }
-
     .events-clients-title{
         font-size:20px;
         margin-bottom:30px;
     }
-
     .events-clients-list{
         display:grid;
         grid-template-columns:repeat(2,1fr);
         gap:30px 20px;
     }
-
     .events-client img{
         max-width:130px;
         max-height:70px;
     }
-
     .gallery{
         padding: 0 0 20px;
     }
-
     .gallery-title{
         padding: 18px 0 10px;
         font-size: 24px;
     }
-
     .gallery-container{
         height: 380px;
     }
-
     .gallery-slider{
         width: 100%;
         height: 330px;
     }
-
     .gallery-image{
         left: 50% !important;
         top: 50%;
@@ -1028,98 +1017,78 @@ body > main {
         height: 330px !important;
         transform: translate(-50%, -50%);
     }
-
     .gallery-image:nth-child(n+2){
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
     }
-
     .gallery-button{
         width: 40px;
         height: 40px;
     }
-
     .gallery-button svg{
         width: 35px;
         height: 35px;
     }
-
     .gallery-button-prev{
         left: 10px;
     }
-
     .gallery-button-next{
         right: 10px;
     }
-
     .events-testimonials-heading{
-    padding:35px 5%;
+        padding:35px 5%;
     }
-
     .events-testimonials-title{
         font-size:20px;
     }
-
     .events-testimonials{
         padding:30px 5% 40px;
     }
-
     .events-testimonials-list{
         grid-template-columns:1fr;
         gap:20px;
     }
-
     .testimonial-card{
         padding:20px;
     }
-
     .testimonial-name{
         font-size:15px;
     }
-
     .testimonial-role,
     .testimonial-company{
         font-size:12px;
     }
-
     .testimonial-text{
         font-size:14px;
     }
-
     .events-banner{
         padding: 30px 0;
         gap: 20px;
     }
-
     .events-banner-item{
         height: 180px;
     }
-
     .events-banner-content{
         width: 90%;
     }
-
     .events-banner-title{
         width: 300px;
         margin: 0 auto 8px;
         font-size: 20px;
         line-height: 1.25;
     }
-
     .events-banner-description{
         width: 280px;
         margin: 0 auto 12px;
         font-size: 14px;
         line-height: 1.3;
     }
-
     .events-banner-button{
         width: 120px;
         height: 40px;
         font-size: 14px;
     }
-
     .events-banner-founder{
         background-position: center 25%;
         background-size: auto 300px;

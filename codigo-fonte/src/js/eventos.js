@@ -9,86 +9,113 @@ const eventModalDescription = document.getElementById("event-modal-description")
 const eventModalAdvantages = document.getElementById("event-modal-advantages");
 
 
+
 const eventData = {
     "coffee-break": {
-        description: `Uma pausa pode ser muito mais do que um intervalo. Na Ambrozini, acreditamos que os momentos entre reuniões, palestras, treinamentos e encontros profissionais também fazem parte da experiência de um evento. Por isso, desenvolvemos soluções gastronômicas que valorizam o acolhimento, a qualidade e a apresentação, proporcionando aos participantes uma pausa agradável e cheia de sabor.
+        description: `Uma pausa bem servida para reuniões, treinamentos, palestras e estandes de feira. Montamos uma mesa prática e farta, com sabores mineiros, para o público se servir sem perder tempo, em um intervalo ou ao longo do dia todo.
 
-Nosso Coffee Break pode ser pensado para diferentes formatos e necessidades, desde pequenas reuniões empresariais até encontros com um número maior de participantes. A proposta é oferecer uma experiência alinhada ao perfil do público, à programação e aos objetivos do evento, considerando a variedade gastronômica e os detalhes que tornam cada ocasião especial.
-
-Mais do que servir alimentos e bebidas, queremos contribuir para um ambiente que estimule boas conversas, conexões e momentos de descontração. Com a experiência Ambrozini, cada pausa se transforma em uma oportunidade de receber bem e demonstrar cuidado com seus convidados.`,
+Ideal para reuniões, cursos, eventos de empresas e estandes em feiras, como os que já atendemos no Expominas.`,
         advantages: [
-            "Opções gastronômicas personalizadas",
-            "Apresentação cuidadosa",
-            "Ideal para reuniões, palestras e treinamentos"
+            "ALGUNS ITENS",
+            "Pão de queijo quentinho",
+            "Mini sanduíches",
+            "Petit fours doces e salgados",
+            "Bolos caseiros",
+            "Doces mineiros: quadradinho e canudinho de doce de leite",
+            "Café coado ou expresso, com açúcar e adoçante",
+            "Sucos, água com e sem gás"
         ]
     },
 
     "happy-hour": {
-        description: `Alguns dos melhores momentos acontecem quando as pessoas se reúnem para celebrar, conversar e compartilhar experiências. O Happy Hour Ambrozini foi pensado para transformar esses encontros em ocasiões agradáveis, combinando gastronomia, descontração e um atendimento que valoriza cada convidado.
+        description: `O encontro descontraído do fim do expediente, para confraternizar com a equipe, celebrar uma meta ou receber clientes. Serviço volante, com garçons circulando com bebida gelada e petiscos.
 
-Seja para comemorar conquistas profissionais, promover a integração entre equipes, receber parceiros comerciais ou reunir amigos em uma celebração especial, buscamos desenvolver soluções gastronômicas adequadas ao estilo de cada encontro. A proposta é proporcionar uma experiência leve, acolhedora e organizada, em que os participantes possam aproveitar o momento.
-
-Acreditamos que um bom Happy Hour vai além do cardápio. Ele cria oportunidades para fortalecer relacionamentos, aproximar pessoas e construir boas lembranças. Na Ambrozini, a gastronomia faz parte dessa conexão, contribuindo para que cada encontro tenha sua própria identidade e seja lembrado pela experiência proporcionada.`,
+Ideal para confraternizações de equipe, lançamentos, encerramento de feiras e eventos de relacionamento.`,
         advantages: [
-            "Experiências gastronômicas variadas",
-            "Ideal para confraternizações e celebrações",
-            "Soluções adaptadas ao seu evento"
+            "ALGUNS ITENS",
+            "Chopp gelado, em barril com chopeira",
+            "Cerveja long neck",
+            "Bar de drinks: caipirinhas, gin tônica, Moscow Mule e Aperol Spritz",
+            "Drinks sem álcool, refrigerantes e água",
+            "Salgados fritos volantes: coxinha, pastéis e camarão empanado",
+            "Espetinhos, como filé ao molho barbecue e tilápia crocante",
+            "Petit fours e canapés",
+            "Petiscos mineiros, como mandioca frita e tábua de frios"
         ]
     },
 
     "catering": {
-        description: `Cada evento possui sua própria dinâmica, seu público e suas necessidades. Pensando nisso, a Ambrozini oferece soluções de Catering que levam nossa experiência gastronômica para diferentes ambientes, formatos e ocasiões. Nosso objetivo é contribuir para que a alimentação seja uma parte especial da experiência, independentemente de onde o encontro aconteça.
+        description: `Café e lanches entregues na sua empresa, prontos para servir. Um serviço simples e prático para reuniões, treinamentos e o dia a dia do escritório, com pedido avulso ou entregas fixas na semana.
 
-O serviço pode ser planejado de acordo com as características do evento, considerando o perfil dos convidados, o espaço disponível, a proposta gastronômica e as necessidades de atendimento. De encontros corporativos a celebrações particulares, buscamos unir sabor, apresentação e organização para criar soluções que se integrem à programação.
+Como funciona: entregamos tudo embalado, com descartáveis e guardanapos, e deixamos a mesa montada. Quando há garrafas térmicas ou bandejas da casa, buscamos depois.
 
-Entendemos que uma boa experiência gastronômica envolve muito mais do que o preparo dos alimentos. Ela também está relacionada ao cuidado com a apresentação, ao planejamento e à atenção aos detalhes. É dessa forma que a Ambrozini busca contribuir para eventos bem organizados, acolhedores e capazes de proporcionar momentos memoráveis aos participantes.`,
+Ideal para reuniões, treinamentos, recepção de clientes e empresas que querem café e lanche com frequência, em dias fixos da semana ou do mês.`,
         advantages: [
-            "Soluções gastronômicas personalizadas",
-            "Atendimento para diferentes ocasiões",
-            "Organização e apresentação"
+            "ALGUNS ITENS",
+            "Café em garrafa térmica, com leite, açúcar e adoçante",
+            "Pão de queijo",
+            "Mini sanduíches e mini croissants recheados",
+            "Bolos caseiros em fatias",
+            "Quitandas mineiras, biscoitos e cookies",
+            "Frutas da estação",
+            "Sucos, água e refrigerantes",
+            "Kits individuais de lanche e bebida, para treinamentos e equipes externas"
         ]
     },
 
     "particulares": {
-        description: `Existem momentos que merecem ser celebrados de maneira especial. Aniversários, casamentos, encontros familiares, comemorações e outras ocasiões importantes carregam histórias, sentimentos e expectativas. Na Ambrozini, entendemos que a gastronomia faz parte dessas memórias e pode tornar cada celebração ainda mais significativa.
+        description: `Festas de 15 anos, casamentos, aniversários, formaturas e celebrações em família. Criamos um cardápio sob medida, do coquetel de boas-vindas ao café do fim da noite, com serviço atencioso para convidados de todas as idades.
 
-Nossa proposta é oferecer experiências gastronômicas que respeitem o estilo de cada evento e valorizem a personalidade de quem está celebrando. Seja uma reunião mais intimista ou uma comemoração com muitos convidados, buscamos desenvolver soluções adequadas às necessidades da ocasião, com atenção à qualidade, à apresentação e aos detalhes que fazem a diferença.
+Ideal para debutantes, casamentos, aniversários, bodas, formaturas e festas de família.
 
-Queremos que anfitriões e convidados possam aproveitar os momentos de encontro, compartilhar boas conversas e celebrar aquilo que realmente importa. Com a experiência Ambrozini, a gastronomia se torna parte da história de cada comemoração, contribuindo para criar lembranças especiais ao lado de pessoas queridas.`,
+Degustação: para eventos particulares, oferecemos uma degustação do cardápio antes da festa, para você provar e escolher os pratos com calma.`,
         advantages: [
-            "Casamentos, aniversários e celebrações",
-            "Experiências personalizadas",
-            "Gastronomia para momentos especiais"
+            "ALGUNS ITENS",
+            "Frios e canapés finos: canapé de salmão, tâmaras com cream cheese e Parma, ceviche",
+            "Salgados assados, folhados e fritos finos",
+            "Espetinhos e Petit Gourmet, como o bobó de camarão em mini porções",
+            "Jantar completo: saladas, nhoque com fonduta, salmão ao molho de maracujá e filé ao molho madeira",
+            "Estação Japonesa com sushiman: nigiri, uramaki, hot roll e sunomono",
+            "Espaço Teen: mini hambúrguer Ambrozini, batata frita, mini pizza, pastéis e milk shake",
+            "Bombons finos e mesa de café com expresso, bolos e petit fours",
+            "Bar de drinks com e sem álcool, cerveja, vinho, whisky e espumante para o brinde"
         ]
     },
 
     "corporativos": {
-        description: `Eventos corporativos representam oportunidades importantes para fortalecer relacionamentos, compartilhar conhecimento, celebrar resultados e aproximar pessoas. Na Ambrozini, compreendemos que cada encontro empresarial possui objetivos específicos e que a experiência gastronômica pode contribuir diretamente para a percepção de qualidade e cuidado com os participantes.
+        description: `Soluções completas para empresas, do estande de feira com vários dias de duração à confraternização de fim de ano. Planejamos o serviço com a sua equipe, respeitamos a agenda do evento e cuidamos de tudo para que você só se preocupe com seus convidados.
 
-Atendemos propostas gastronômicas para diferentes ocasiões do ambiente empresarial, como reuniões, convenções, palestras, treinamentos, confraternizações e encontros institucionais. Buscamos compreender as características de cada evento para oferecer soluções alinhadas ao perfil da empresa, ao público e à programação, valorizando a organização e a apresentação.
-
-Nosso propósito é contribuir para experiências que transmitam profissionalismo, acolhimento e atenção aos detalhes. Acreditamos que receber bem também é uma forma de valorizar colaboradores, clientes e parceiros. Por isso, trabalhamos para que a gastronomia seja um elemento positivo na realização de encontros corporativos, fortalecendo conexões e deixando boas impressões.`,
+Ideal para feiras, convenções, lançamentos de produto, treinamentos, premiações e confraternizações de fim de ano.`,
         advantages: [
-            "Convenções e encontros empresariais",
-            "Confraternizações e eventos institucionais",
-            "Soluções para diferentes formatos"
+            "ALGUNS ITENS",
+            "Coffee break para abertura e intervalos",
+            "Atendimento a estandes em feiras e exposições, com reposição diária",
+            "Almoço ou jantar executivo",
+            "Coquetel com canapés, salgados volantes e espetinhos",
+            "Happy hour com chopp, cerveja e bar de drinks",
+            "Estações especiais, como a Estação Japonesa",
+            "Mesa de café com expresso, bolos e petit fours",
+            "Equipe uniformizada: garçons, garçonetes, bartenders e maître"
         ]
     },
 
     "porte": {
-        description: `Cada evento possui uma dimensão, mas todos compartilham algo essencial: a importância de proporcionar uma boa experiência às pessoas presentes. Na Ambrozini, acreditamos que a qualidade da gastronomia, o planejamento e a atenção aos detalhes devem estar presentes em celebrações de pequeno, médio e grande porte.
+        description: `De encontros mais reservados a grandes celebrações, o Ambrozini oferece soluções gastronômicas para diferentes formatos e dimensões de eventos em Belo Horizonte.
 
-Desenvolvemos propostas gastronômicas considerando as características de cada ocasião, desde encontros mais reservados até eventos com um público numeroso. Avaliamos as necessidades relacionadas ao formato, ao perfil dos convidados e à dinâmica da programação, buscando soluções que se adaptem à dimensão e aos objetivos de cada projeto.
+Cuidamos da comida, da bebida e do serviço, considerando o público, o horário e o local de cada ocasião. Nossa equipe de garçons, bartenders e cozinha trabalha para proporcionar uma experiência organizada e acolhedora.
 
-Sabemos que eventos maiores exigem atenção especial à organização e à coordenação dos serviços, enquanto encontros menores valorizam a proximidade e a personalização. Independentemente do porte, nosso compromisso é contribuir para uma experiência gastronômica marcante, combinando sabor, cuidado e soluções pensadas para cada necessidade. Afinal, o que torna um evento especial não é apenas o seu tamanho, mas a experiência que ele proporciona.`,
+Cada cardápio pode ser personalizado de acordo com a proposta do evento, seja uma celebração particular, um encontro empresarial ou uma programação com grande número de convidados.`,
         advantages: [
+            "ALGUMAS SOLUÇÕES",
             "Eventos de pequeno, médio e grande porte",
-            "Soluções adaptadas à dimensão do evento",
-            "Planejamento gastronômico personalizado"
+            "Cardápios personalizados para diferentes públicos",
+            "Serviços de buffet e gastronomia para eventos",
+            "Coffee break, coquetéis, almoços e jantares",
+            "Equipe de garçons, bartenders e cozinha",
+            "Atendimento a eventos corporativos e particulares"
         ]
     }
 };
-
 
 eventCards.forEach(card => {
 
