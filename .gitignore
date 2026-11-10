@@ -1,28 +1,51 @@
-# Arquivos do Visual Studio Code
+
+# Visual Studio Code e outras IDEs
 .vscode/
 *.code-workspace
+.idea/
+.vs/
 
 # Arquivos temporários
 *.log
 *.tmp
 *.temp
+*.bak
+*.swp
+*.swo
 
-# Arquivos do sistema
+# Arquivos do sistema operacional
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # Vídeos grandes
 codigo-fonte/assets/vídeos/*.mp4
 codigo-fonte/assets/vídeos/*.mov
 codigo-fonte/assets/vídeos/*.avi
 
-# Arquivos de configuração local
+# Variáveis de ambiente e credenciais
 .env
-.env.local
+.env.*
+!.env.example
 
-# Dependências
+# Configurações privadas do PHP e SMTP
+**/config-private.php
+**/contato-config.php
+**/secrets/
+**/private/
+
+# Dependências instaladas
 node_modules/
+vendor/
+
+# Arquivos de logs
+logs/
+*.log
 
 # Builds e arquivos gerados
 dist/
 build/
+coverage/
+
+# Arquivos locais de configuração
+*.local.php

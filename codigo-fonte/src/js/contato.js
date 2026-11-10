@@ -161,10 +161,40 @@ const contato = `
 
 document.body.insertAdjacentHTML("beforeend", contato);
 
-// O envio real será implementado na etapa do PHP/SMTP.
-document.getElementById("contact-form")?.addEventListener("submit", (event) => {
+const contactForm = document.getElementById("contact-form");
+
+contactForm?.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    const feedback = document.querySelector(".contact-feedback");
-    feedback.textContent = "O envio de mensagens estará disponível em breve.";
+    const feedback = contactForm.querySelector(".contact-feedback");
+    const submitButton = contactForm.querySelector(".contact-submit");
+
+    if (!contactForm.reportValidity()) return;
+
+    const formData = new FormData(contactForm);
+    feedback.textContent = "Enviando sua mensagem...";
+    submitButton.disabled = true;
+
+    try {
+        const response = await fetch("/codigo-fonte/src/php/enviar-contato.php", {
+            method: "POST",
+            body: formData,
+            headers: { "Accept": "application/json" }
+        });
+
+        const result = await response.json();
+        if (!response.ok || !result.success) {
+            throw new Error(result.message || "Não foi possível enviar a mensagem.");
+        }
+
+        feedback.textContent = "Mensagem enviada com sucesso! Em breve entraremos em contato.";
+        contactForm.reset();
+    } catch (error) {
+        console.error("Erro no envio do formulário:", error);
+
+        feedback.textContent =
+            "Não foi possível enviar sua mensagem agora. Tente novamente mais tarde.";
+    } finally {
+        submitButton.disabled = false;
+    }
 });
