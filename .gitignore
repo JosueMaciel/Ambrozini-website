@@ -33,6 +33,8 @@ codigo-fonte/assets/vídeos/*.avi
 **/contato-config.php
 **/secrets/
 **/private/
+**/config/mail.phpcd ..
+
 
 # Dependências instaladas
 node_modules/

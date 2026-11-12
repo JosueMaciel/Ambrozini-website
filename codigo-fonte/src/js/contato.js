@@ -86,7 +86,20 @@ const contato = `
 
             <h2>Fale Conosco</h2>
 
+            
             <form class="contact-form" id="contact-form">
+
+                <!-- Campo invisível de proteção contra bots -->
+                <div class="contact-honeypot" aria-hidden="true">
+                    <label for="contact-website">Website</label>
+                    <input
+                        type="text"
+                        id="contact-website"
+                        name="website"
+                        tabindex="-1"
+                        autocomplete="off"
+                    >
+                </div>
 
                 <div class="contact-fields">
 
@@ -98,6 +111,7 @@ const contato = `
                             id="contact-name"
                             name="nome"
                             autocomplete="name"
+                            maxlength="120"
                             required
                         >
 
@@ -107,6 +121,7 @@ const contato = `
                             id="contact-email"
                             name="email"
                             autocomplete="email"
+                            maxlength="254"
                             required
                         >
 
@@ -133,6 +148,7 @@ const contato = `
                             id="contact-message"
                             name="mensagem"
                             placeholder="Escreva sua mensagem..."
+                            maxlength="5000"
                             required
                         ></textarea>
 
@@ -144,7 +160,11 @@ const contato = `
                     Enviar
                 </button>
 
-                <p class="contact-feedback" role="status" aria-live="polite"></p>
+                <p
+                    class="contact-feedback"
+                    role="status"
+                    aria-live="polite"
+                ></p>
 
             </form>
 
