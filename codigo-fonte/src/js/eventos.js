@@ -209,3 +209,121 @@ if(galleryMobileScreen.matches){
 // Botões de navegação
 galleryButtonNext.addEventListener("click", galleryNext);
 galleryButtonPrev.addEventListener("click", galleryPrev);
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const faqModal = document.getElementById("events-faq-modal");
+    const faqOpenButton = document.getElementById("open-events-faq");
+    const faqCloseButton = document.getElementById("close-events-faq");
+    const faqOverlay = faqModal?.querySelector(".events-faq-overlay");
+    const faqContainer = faqModal?.querySelector(".events-faq-container");
+
+    if (!faqModal || !faqOpenButton || !faqCloseButton || !faqContainer) {
+        return;
+    }
+
+    const faqCategories = faqModal.querySelectorAll(".events-faq-category");
+    const faqPanels = faqModal.querySelectorAll(".events-faq-panel");
+
+    let previousFocus = null;
+    let previousBodyOverflow = "";
+
+    // ABRIR MODAL
+    function openFaqModal() {
+
+        previousFocus = document.activeElement;
+        previousBodyOverflow = document.body.style.overflow;
+
+        faqModal.hidden = false;
+        document.body.style.overflow = "hidden";
+
+        faqContainer.scrollTop = 0;
+        faqCloseButton.focus();
+    }
+
+    // FECHAR MODAL
+    function closeFaqModal() {
+
+        faqModal.hidden = true;
+        document.body.style.overflow = previousBodyOverflow;
+
+        if (previousFocus && typeof previousFocus.focus === "function") {
+            previousFocus.focus();
+        }
+    }
+
+    // BOTÃO DE ABERTURA
+    faqOpenButton.addEventListener("click", openFaqModal);
+
+    // BOTÃO DE FECHAMENTO
+    faqCloseButton.addEventListener("click", closeFaqModal);
+
+    // FECHAR AO CLICAR FORA
+    faqOverlay?.addEventListener("click", closeFaqModal);
+
+    // FECHAR COM ESC E MANTER FOCO DENTRO DA MODAL
+    faqModal.addEventListener("keydown", (event) => {
+
+        if (event.key === "Escape") {
+            event.preventDefault();
+            closeFaqModal();
+            return;
+        }
+
+        if (event.key !== "Tab") {
+            return;
+        }
+
+        const focusableElements = Array.from(
+            faqModal.querySelectorAll(
+                'button:not([disabled]), a[href], summary, input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+            )
+        ).filter(element => element.getClientRects().length > 0);
+
+        if (!focusableElements.length) {
+            event.preventDefault();
+            faqCloseButton.focus();
+            return;
+        }
+
+        const first = focusableElements[0];
+        const last = focusableElements[focusableElements.length - 1];
+
+        if (event.shiftKey && document.activeElement === first) {
+            event.preventDefault();
+            last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+            event.preventDefault();
+            first.focus();
+        }
+    });
+
+    // ALTERNAR CATEGORIAS
+    faqCategories.forEach(categoryButton => {
+
+        categoryButton.addEventListener("click", () => {
+
+            const selectedCategory = categoryButton.dataset.faqCategory;
+
+            faqCategories.forEach(button => {
+
+                const isActive = button === categoryButton;
+
+                button.classList.toggle("active", isActive);
+                button.setAttribute("aria-pressed", String(isActive));
+            });
+
+            faqPanels.forEach(panel => {
+
+                const isActive = panel.dataset.faqPanel === selectedCategory;
+
+                panel.classList.toggle("active", isActive);
+                panel.hidden = !isActive;
+            });
+
+        });
+
+    });
+
+});

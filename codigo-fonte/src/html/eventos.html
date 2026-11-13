@@ -207,7 +207,7 @@
             <div class="events-cta">
 
                 <h2 class="events-cta-title">
-                    SOLICITE UM ORÇAMENTO
+                    Conversa Individual
                 </h2>
 
                 <a
@@ -294,7 +294,7 @@
                     rel="noopener noreferrer"
                     class="events-spaces-button"
                 >
-                    SOLICITE SEU ORÇAMENTO
+                    Solicite um Orçamento
                 </a>
             </div>
 
@@ -534,9 +534,25 @@
 
             </div>
 
+            <!-- CHAMADA FAQ -->
+            <div class="events-faq-cta">
+
+                <h2>Ainda tem dúvidas sobre nossos eventos?</h2>
+
+                <button
+                    type="button"
+                    class="events-faq-button"
+                    id="open-events-faq"
+                    aria-haspopup="dialog"
+                >
+                    Perguntas frequentes
+                </button>
+
+            </div>
+
         </section>
 
-        <section class="events-banner"></section>
+        <section class="events-banner">
 
             <article class="events-banner-item events-banner-founder">
 
@@ -610,6 +626,222 @@
                             CONVERSE COM NOSSA EQUIPE
                         </a>
                     </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div
+            class="events-faq-modal"
+            id="events-faq-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="events-faq-title"
+            hidden
+        >
+            <div class="events-faq-overlay"></div>
+
+            <div class="events-faq-container">
+
+                <!-- CABEÇALHO -->
+                <div class="events-faq-header">
+
+                    <div class="events-faq-heading">
+                        <span class="events-faq-label">AMBROZINI EVENTOS</span>
+                        <h2 id="events-faq-title">Perguntas frequentes</h2>
+                        <p>
+                            Encontre respostas para as principais dúvidas
+                            sobre nossos eventos.
+                        </p>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="events-faq-close"
+                        id="close-events-faq"
+                        aria-label="Fechar perguntas frequentes"
+                    >
+                        &times;
+                    </button>
+
+                </div>
+
+                <!-- CONTEÚDO -->
+                <div class="events-faq-content">
+
+                    <!-- CATEGORIAS -->
+                    <nav
+                        class="events-faq-categories"
+                        aria-label="Categorias de perguntas frequentes"
+                    >
+                        <button type="button" class="events-faq-category active" data-faq-category="servicos" aria-pressed="true">
+                            Sobre os serviços
+                        </button>
+
+                        <button type="button" class="events-faq-category" data-faq-category="espacos" aria-pressed="false">
+                            Sobre os espaços
+                        </button>
+
+                        <button type="button" class="events-faq-category" data-faq-category="gastronomia" aria-pressed="false">
+                            Cardápios e gastronomia
+                        </button>
+
+                        <button type="button" class="events-faq-category" data-faq-category="orcamentos" aria-pressed="false">
+                            Orçamentos e contratação
+                        </button>
+
+                        <button type="button" class="events-faq-category" data-faq-category="atendimento" aria-pressed="false">
+                            Atendimento e execução
+                        </button>
+                    </nav>
+
+                    <!-- PERGUNTAS E RESPOSTAS -->
+                    <div class="events-faq-panels">
+
+                        <section class="events-faq-panel active" data-faq-panel="servicos">
+
+                            <h3>Sobre os serviços</h3>
+
+                            <details class="events-faq-item">
+                                <summary>A Ambrozini realiza eventos corporativos e sociais?</summary>
+                                <p>Sim. A Ambrozini realiza eventos corporativos e sociais.</p>
+                            </details>
+
+                            <details class="events-faq-item">
+                                <summary>É possível contratar apenas o serviço de alimentação?</summary>
+                                <p>Sim. Você pode contratar apenas o serviço de alimentação para seu evento.</p>
+                            </details>
+
+                            <details class="events-faq-item">
+                                <summary>A Ambrozini atende eventos fora de seus próprios espaços?</summary>
+                                <p>Sim. Nossa equipe também atende eventos realizados em outros locais.</p>
+                            </details>
+
+                            <details class="events-faq-item">
+                                <summary>A empresa realiza eventos em outras cidades além de Belo Horizonte?</summary>
+                                <p>Sim. A Ambrozini também atende eventos em outras cidades.</p>
+                            </details>
+
+                            <details class="events-faq-item">
+                                <summary>É possível personalizar o cardápio de acordo com o perfil do evento?</summary>
+                                <p>Sim. O cardápio pode ser personalizado de acordo com as necessidades e o perfil do evento.</p>
+                            </details>
+
+                            <details class="events-faq-item">
+                                <summary>A Ambrozini fornece serviços complementares ao evento?</summary>
+                                <p>
+                                    Sim. Podemos oferecer decoração, iluminação,
+                                    música, bar de drinks e outros serviços complementares.
+                                </p>
+                            </details>
+
+                        </section>
+
+                        <section class="events-faq-panel" data-faq-panel="espacos" hidden>
+
+                            <h3>Sobre os espaços</h3>
+
+                            <details class="events-faq-item">
+                                <summary>Onde ficam os espaços para eventos?</summary>
+                                <p>
+                                    Nossos espaços estão localizados em:
+                                </p>
+                                <ul>
+                                    <li>Alameda Oscar Niemeyer, 288 – Vale do Serrano, Nova Lima – MG.</li>
+                                    <li>Rua dos Pampas, 304 – Prado, Belo Horizonte – MG.</li>
+                                </ul>
+                            </details>
+
+                            <details class="events-faq-item">
+                                <summary>Os espaços possuem mobiliário, climatização e equipamentos?</summary>
+                                <p>Sim. Os espaços contam com mobiliário, climatização e equipamentos para eventos.</p>
+                            </details>
+
+                            <details class="events-faq-item">
+                                <summary>É possível contratar o espaço junto com o buffet da Ambrozini?</summary>
+                                <p>Sim. Você pode contratar o espaço junto com o serviço de buffet da Ambrozini.</p>
+                            </details>
+
+                            <details class="events-faq-item">
+                                <summary>Posso contratar apenas o espaço e utilizar fornecedores externos?</summary>
+                                <p>Não. Os espaços não são disponibilizados para contratação independente com fornecedores externos.</p>
+                            </details>
+
+                        </section>
+
+                        <section class="events-faq-panel" data-faq-panel="gastronomia" hidden>
+
+                            <h3>Cardápios e gastronomia</h3>
+
+                            <details class="events-faq-item">
+                                <summary>É possível realizar uma degustação antes de fechar o evento?</summary>
+                                <p>Sim. É possível realizar uma degustação antes da contratação.</p>
+                            </details>
+
+                            <details class="events-faq-item">
+                                <summary>A quantidade de alimentos é dimensionada de acordo com o número de convidados?</summary>
+                                <p>Sim. A quantidade é planejada conforme o número de convidados.</p>
+                            </details>
+
+                            <details class="events-faq-item">
+                                <summary>A Ambrozini disponibiliza equipe para servir durante o evento?</summary>
+                                <p>Sim. Disponibilizamos equipe para servir durante o evento.</p>
+                            </details>
+
+                        </section>
+
+                        <section class="events-faq-panel" data-faq-panel="orcamentos" hidden>
+
+                            <h3>Orçamentos e contratação</h3>
+
+                            <details class="events-faq-item">
+                                <summary>Como solicitar um orçamento para meu evento?</summary>
+                                <p>
+                                    Você pode solicitar um orçamento por meio do
+                                    nosso formulário digital de eventos.
+                                </p>
+                            </details>
+
+                        </section>
+
+                        <section class="events-faq-panel" data-faq-panel="atendimento" hidden>
+
+                            <h3>Atendimento e execução</h3>
+
+                            <details class="events-faq-item">
+                                <summary>A equipe permanece durante todo o evento?</summary>
+                                <p>Sim. Nossa equipe permanece durante todo o evento.</p>
+                            </details>
+
+                            <details class="events-faq-item">
+                                <summary>Existe um responsável da Ambrozini acompanhando o evento?</summary>
+                                <p>Sim. Um responsável da Ambrozini acompanha a execução do evento.</p>
+                            </details>
+
+                        </section>
+
+                    </div>
+
+                </div>
+
+                <!-- CTA FINAL -->
+                <div class="events-faq-footer">
+
+                    <h3>Ainda tem dúvidas sobre seu evento?</h3>
+
+                    <p>
+                        Nossa equipe está pronta para ajudar a encontrar
+                        a melhor solução para sua ocasião.
+                    </p>
+
+                    <a
+                        href="https://app8.meeventos.com.br/ambrozini/?x=6&amp;c=2SYVC88&amp;tipo=solicitacao"
+                        class="events-faq-budget-button"
+                    >
+                        Solicitar orçamento
+                    </a>
 
                 </div>
 
